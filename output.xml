@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on linux)" generated="20231016 22:03:01.748" rpa="false" schemaversion="4">
+<suite id="s1" name="Login" source="/home/rahadirafsanjani/Main/source-code/test-lake/try-test/login.robot">
+<test id="s1-t1" name="Post Login Test" line="14">
+<kw name="Create Session">
+<arg>qarpa</arg>
+<arg>${Base_Url}</arg>
+<arg>verify=true</arg>
+<msg timestamp="20231016 22:03:01.762" level="FAIL">No keyword with name 'Create Session' found.</msg>
+<status status="FAIL" starttime="20231016 22:03:01.762" endtime="20231016 22:03:01.762"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${headers}</var>
+<arg>Accept=application/json</arg>
+<arg>Content-Type=application/json</arg>
+<arg>charset=utf-8</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="NOT RUN" starttime="20231016 22:03:01.762" endtime="20231016 22:03:01.762"/>
+</kw>
+<kw name="POST On Session">
+<var>${response}</var>
+<arg>my_session</arg>
+<arg>${Url}</arg>
+<arg>headers=${headers}</arg>
+<arg>json=${data}</arg>
+<status status="NOT RUN" starttime="20231016 22:03:01.763" endtime="20231016 22:03:01.763"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response.status_code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231016 22:03:01.763" endtime="20231016 22:03:01.763"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231016 22:03:01.763" endtime="20231016 22:03:01.763"/>
+</kw>
+<status status="FAIL" starttime="20231016 22:03:01.760" endtime="20231016 22:03:01.763">No keyword with name 'Create Session' found.</status>
+</test>
+<status status="FAIL" starttime="20231016 22:03:01.748" endtime="20231016 22:03:01.763"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231016 22:03:01.746" level="ERROR">Error in file '/home/rahadirafsanjani/Main/source-code/test-lake/try-test/login.robot' on line 2: Non-existing setting 'Library RequestsLibrary'.</msg>
+<msg timestamp="20231016 22:03:01.746" level="ERROR">Error in file '/home/rahadirafsanjani/Main/source-code/test-lake/try-test/login.robot' on line 3: Non-existing setting 'Library Collections'.</msg>
+<msg timestamp="20231016 22:03:01.746" level="ERROR">Error in file '/home/rahadirafsanjani/Main/source-code/test-lake/try-test/login.robot' on line 4: Non-existing setting 'Library JSONLibrary'.</msg>
+<msg timestamp="20231016 22:03:01.746" level="ERROR">Error in file '/home/rahadirafsanjani/Main/source-code/test-lake/try-test/login.robot' on line 5: Non-existing setting 'Library OperatingSystem'.</msg>
+</errors>
+</robot>

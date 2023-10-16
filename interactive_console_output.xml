@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.12 on linux)" generated="20231016 21:25:59.043" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="/home/rahadirafsanjani/.vscode-insiders/extensions/robocorp.robotframework-lsp-1.11.0/src/robotframework_ls/vendored/robotframework_interactive/robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="create session">
+<arg>get_information</arg>
+<arg>${Base_Url}</arg>
+<msg timestamp="20231016 21:25:59.428" level="FAIL">No keyword with name 'create session' found.</msg>
+<status status="FAIL" starttime="20231016 21:25:59.428" endtime="20231016 21:25:59.428"/>
+</kw>
+<kw name="get on session">
+<var>${response}</var>
+<arg>get_information</arg>
+<arg>${params}</arg>
+<status status="NOT RUN" starttime="20231016 21:25:59.429" endtime="20231016 21:25:59.429"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response.status_code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231016 21:25:59.430" endtime="20231016 21:25:59.430"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231016 21:25:59.430" endtime="20231016 21:25:59.430"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response.headers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231016 21:25:59.430" endtime="20231016 21:25:59.430"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${Status_Code}</var>
+<arg>${response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="NOT RUN" starttime="20231016 21:25:59.430" endtime="20231016 21:25:59.430"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${Status_Code}</arg>
+<arg>200</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" starttime="20231016 21:25:59.430" endtime="20231016 21:25:59.430"/>
+</kw>
+<status status="PASS" starttime="20231016 21:25:59.057" endtime="20231016 21:26:05.169"/>
+</kw>
+<status status="PASS" starttime="20231016 21:25:59.057" endtime="20231016 21:26:05.169"/>
+</test>
+<status status="PASS" starttime="20231016 21:25:59.044" endtime="20231016 21:26:05.170"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
